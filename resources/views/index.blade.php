@@ -32,12 +32,6 @@
         <!-- Template Main CSS File -->
         <link href="/assets/css/style.css" rel="stylesheet">
 
-        <!-- =======================================================
-  * Template Name: Selecao - v2.3.1
-  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
     </head>
 
     <body>
@@ -54,7 +48,7 @@
 
                 <nav class="nav-menu d-none d-lg-block">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="/">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -675,29 +669,10 @@
                         <h2>Pricing</h2>
                         <p>Our Competing Prices</p>
                     </div>
-
                     <div class="row">
-
-                        <div class="col-lg-3 col-md-6">
-                            <div class="box" data-aos="zoom-in">
-                                <h3>Free</h3>
-                                <h4><sup>$</sup>0<span> / month</span></h4>
-                                <ul>
-                                    <li>Aida dere</li>
-                                    <li>Nec feugiat nisl</li>
-                                    <li>Nulla at volutpat dola</li>
-                                    <li class="na">Pharetra massa</li>
-                                    <li class="na">Massa ultricies mi</li>
-                                </ul>
-                                <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
                             <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
-                                <h3>Business</h3>
+                                <h3>Weddings</h3>
                                 <h4><sup>$</sup>19<span> / month</span></h4>
                                 <ul>
                                     <li>Aida dere</li>
@@ -711,44 +686,39 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-                                <h3>Developer</h3>
-                                <h4><sup>$</sup>29<span> / month</span></h4>
+                        <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
+                            <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
+                                <h3>Parties</h3>
+                                <h4><sup>$</sup>19<span> / month</span></h4>
                                 <ul>
                                     <li>Aida dere</li>
                                     <li>Nec feugiat nisl</li>
                                     <li>Nulla at volutpat dola</li>
                                     <li>Pharetra massa</li>
-                                    <li>Massa ultricies mi</li>
+                                    <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
                                     <a href="#" class="btn-buy">Buy Now</a>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-                                <span class="advanced">Advanced</span>
-                                <h3>Ultimate</h3>
-                                <h4><sup>$</sup>49<span> / month</span></h4>
+                        <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
+                            <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
+                                <h3>Special Events</h3>
+                                <h4><sup>$</sup>19<span> / month</span></h4>
                                 <ul>
                                     <li>Aida dere</li>
                                     <li>Nec feugiat nisl</li>
                                     <li>Nulla at volutpat dola</li>
                                     <li>Pharetra massa</li>
-                                    <li>Massa ultricies mi</li>
+                                    <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
                                     <a href="#" class="btn-buy">Buy Now</a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </section><!-- End Pricing Section -->
 
@@ -869,7 +839,7 @@
                                     </div>
                                 </div>
                                 <div class="member-info">
-                                    <h4>Walter White</h4>
+                                    <h4>Ghazanfar Ateeb</h4>
                                     <span>Chief Executive Officer</span>
                                 </div>
                             </div>
@@ -878,7 +848,7 @@
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                             <div class="member" data-aos="fade-up" data-aos-delay="100">
                                 <div class="member-img">
-                                    <img src="/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                    <img src="/assets/img/team/team-2.jpeg" class="img-fluid" alt="">
                                     <div class="social">
                                         <a href=""><i class="icofont-twitter"></i></a>
                                         <a href=""><i class="icofont-facebook"></i></a>
@@ -887,7 +857,7 @@
                                     </div>
                                 </div>
                                 <div class="member-info">
-                                    <h4>Sarah Jhonson</h4>
+                                    <h4>Afaf Kainat</h4>
                                     <span>Product Manager</span>
                                 </div>
                             </div>
@@ -896,7 +866,7 @@
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                             <div class="member" data-aos="fade-up" data-aos-delay="200">
                                 <div class="member-img">
-                                    <img src="/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                    <img src="/assets/img/team/team-3.jpeg" class="img-fluid" alt="">
                                     <div class="social">
                                         <a href=""><i class="icofont-twitter"></i></a>
                                         <a href=""><i class="icofont-facebook"></i></a>
@@ -905,7 +875,7 @@
                                     </div>
                                 </div>
                                 <div class="member-info">
-                                    <h4>William Anderson</h4>
+                                    <h4>Syeda Zuha Ali</h4>
                                     <span>CTO</span>
                                 </div>
                             </div>
@@ -914,7 +884,7 @@
                         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                             <div class="member" data-aos="fade-up" data-aos-delay="300">
                                 <div class="member-img">
-                                    <img src="/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                    <img src="/assets/img/team/team-4.jpeg" class="img-fluid" alt="">
                                     <div class="social">
                                         <a href=""><i class="icofont-twitter"></i></a>
                                         <a href=""><i class="icofont-facebook"></i></a>
@@ -923,7 +893,7 @@
                                     </div>
                                 </div>
                                 <div class="member-info">
-                                    <h4>Amanda Jepson</h4>
+                                    <h4>Amna Shafiq</h4>
                                     <span>Accountant</span>
                                 </div>
                             </div>
@@ -950,19 +920,19 @@
                                 <div class="address">
                                     <i class="icofont-google-map"></i>
                                     <h4>Location:</h4>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p>AA Block, Sector D, Bahria Town, Lahore</p>
                                 </div>
 
                                 <div class="email">
                                     <i class="icofont-envelope"></i>
                                     <h4>Email:</h4>
-                                    <p>info@example.com</p>
+                                    <p>ghazanfar.ateeb9125@gmail.com</p>
                                 </div>
 
                                 <div class="phone">
                                     <i class="icofont-phone"></i>
                                     <h4>Call:</h4>
-                                    <p>+1 5589 55488 55s</p>
+                                    <p>+92 310 9453603</p>
                                 </div>
 
                             </div>
@@ -1031,10 +1001,6 @@
                     &copy; Copyright <strong><span>Selecao</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
-                    <!-- All the links in the footer should remain intact. -->
-                    <!-- You can delete the links only if you purchased the pro version. -->
-                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                 </div>
             </div>
@@ -1042,7 +1008,6 @@
 
         <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
-        <!-- Vendor JS Files -->
         <script src="/assets/vendor/jquery/jquery.min.js"></script>
         <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -1052,7 +1017,6 @@
         <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
         <script src="/assets/vendor/aos/aos.js"></script>
 
-        <!-- Template Main JS File -->
         <script src="/assets/js/main.js"></script>
 
     </body>
