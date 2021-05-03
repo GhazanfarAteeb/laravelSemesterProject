@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Selecao Bootstrap Template - Index</title>
+        <title>Evening Unfold Events Bootstrap Template - Index</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
@@ -41,7 +41,7 @@
             <div class="container d-flex align-items-center">
 
                 <div class="logo mr-auto">
-                    <h1 class="text-light"><a href="index.html">Selecao</a></h1>
+                    <h1 class="text-light"><a href="index.html">Evening Unfold Events</a></h1>
                     <!-- Uncomment below if you prefer to use an image logo -->
                     <!-- <a href="index.html"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>-->
                 </div>
@@ -86,7 +86,7 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="carousel-container">
-                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Selecao</span></h2>
+                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Evening Unfold Events</span></h2>
                         <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
                             Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
                             Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
@@ -987,7 +987,7 @@
         <!-- ======= Footer ======= -->
         <footer id="footer">
             <div class="container">
-                <h3>Selecao</h3>
+                <h3>Evening Unfold Events</h3>
                 <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
                     placeat.</p>
                 <div class="social-links">
@@ -998,10 +998,7 @@
                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 </div>
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Selecao</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    &copy; Copyright <strong><span>Evening Unfold Events</span></strong>. All Rights Reserved
                 </div>
             </div>
         </footer><!-- End Footer -->
