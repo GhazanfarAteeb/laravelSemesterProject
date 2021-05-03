@@ -54,7 +54,7 @@
 
                 <nav class="nav-menu d-none d-lg-block">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -77,7 +77,7 @@
                                 <li><a href="#">Drop Down 5</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a href="login">Login</a></li>
 
                     </ul>
                 </nav><!-- .nav-menu -->
@@ -92,10 +92,10 @@
                 <div class="container">
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>Login</h2>
+                        <h2>@yield('selected_page')</h2>
                         <ol>
-                            <li><a href="index.html">Login</a></li>
-                            <li>Register</li>
+                            <li><a href="@yield('loaded_page')">@yield('selected_page')</a></li>
+                            <li><a href="@yield('unloaded_page')" class="text-black-50">@yield('unselected_page')</a></li>
                         </ol>
                     </div>
 

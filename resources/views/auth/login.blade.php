@@ -1,12 +1,13 @@
 @extends('layouts.master')
-
+@section('unselected_page','Register')
+@section('selected_page','Login')
+@section('loaded_page','login')
+@section('unloaded_page','register')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('') }}</div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
