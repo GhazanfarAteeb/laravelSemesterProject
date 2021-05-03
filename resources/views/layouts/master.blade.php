@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Inner Page - Evening Unfold Events Bootstrap Template</title>
+        <title>Inner Page - Evening Unfold Events</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
@@ -48,11 +48,11 @@
                 <nav class="nav-menu d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="/">Home</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="services">Services</a></li>
-                        <li><a href="portfolio">Portfolio</a></li>
-                        <li><a href="pricing">Pricing</a></li>
-                        <li><a href="team">Team</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/#pricing">Pricing</a></li>
+                        <li><a href="/#team">Team</a></li>
                         <li class="drop-down"><a href="">Drop Down</a>
                             <ul>
                                 <li><a href="#">Drop Down 1</a></li>
