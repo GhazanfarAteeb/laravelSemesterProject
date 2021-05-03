@@ -71,7 +71,7 @@
                                 <li><a href="#">Drop Down 5</a></li>
                             </ul>
                         </li>
-                        <li><a href="/login">Sign In</a></li>
+                        <li><a href="/login">Login</a></li>
 
                     </ul>
                 </nav><!-- .nav-menu -->
@@ -357,24 +357,6 @@
                 </div>
             </section><!-- End Features Section -->
 
-            <!-- ======= Cta Section ======= -->
-            <section id="cta" class="cta">
-                <div class="container">
-
-                    <div class="row" data-aos="zoom-out">
-                        <div class="col-lg-9 text-center text-lg-left">
-                            <h3>Call To Action</h3>
-                            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="col-lg-3 cta-btn-container text-center">
-                            <a class="cta-btn align-middle" href="#">Call To Action</a>
-                        </div>
-                    </div>
-
-                </div>
-            </section><!-- End Cta Section -->
 
             <!-- ======= Services Section ======= -->
             <section id="services" class="services">
@@ -734,83 +716,31 @@
                     <ul class="faq-list">
 
                         <li data-aos="fade-up" data-aos-delay="100">
-                            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna
-                                duis? <i class="icofont-simple-up"></i></a>
+                            <a data-toggle="collapse" class="" href="#faq1">What services do we offer? <i class="icofont-simple-up"></i></a>
                             <div id="faq1" class="collapse show" data-parent=".faq-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.
+                                    We are event organizers and providing our customers the best memories for their special events.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="200">
-                            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi
-                                enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+                            <a data-toggle="collapse" href="#faq2" class="collapsed">What charges we are taking from our customers? <i class="icofont-simple-up"></i></a>
                             <div id="faq2" class="collapse" data-parent=".faq-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
+                                    We are taking reasonable charges as compared to other event organizing courtries
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="300">
-                            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur
-                                adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+                            <a data-toggle="collapse" href="#faq3" class="collapsed">Do we have a return policy of cash for an event which is being cancelled? <i class="icofont-simple-up"></i></a>
                             <div id="faq3" class="collapse" data-parent=".faq-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    Yes, we will provide you 70% cashback of the event if it is cancelled by the customer. However, if the event may not be organized due to some certain issues then our customers can get a full refund followed by a solid proof of event cancellation.
                                 </p>
                             </div>
                         </li>
-
-                        <li data-aos="fade-up" data-aos-delay="400">
-                            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus.
-                                Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
-                            <div id="faq4" class="collapse" data-parent=".faq-list">
-                                <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="500">
-                            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam
-                                aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
-                            <div id="faq5" class="collapse" data-parent=".faq-list">
-                                <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                                </p>
-                            </div>
-                        </li>
-
-                        <li data-aos="fade-up" data-aos-delay="600">
-                            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare.
-                                Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                    class="icofont-simple-up"></i></a>
-                            <div id="faq6" class="collapse" data-parent=".faq-list">
-                                <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                                    Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
-                                    Nibh tellus molestie nunc non blandit massa enim nec.
-                                </p>
-                            </div>
-                        </li>
-
                     </ul>
 
                 </div>
@@ -988,8 +918,7 @@
         <footer id="footer">
             <div class="container">
                 <h3>Evening Unfold Events</h3>
-                <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
-                    placeat.</p>
+                <p>All kinds of events are done professionally.</p>
                 <div class="social-links">
                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
