@@ -77,7 +77,7 @@
                                 <li><a href="#">Drop Down 5</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/login">Sign In</a></li>
 
                     </ul>
                 </nav><!-- .nav-menu -->
