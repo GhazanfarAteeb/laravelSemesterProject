@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Inner Page - Evening Unfold Events</title>
+        <title>@yield('selected_page') - Evening Unfold Events</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
@@ -53,21 +53,11 @@
                         <li><a href="/#portfolio">Portfolio</a></li>
                         <li><a href="/#pricing">Pricing</a></li>
                         <li><a href="/#team">Team</a></li>
-                        <li class="drop-down"><a href="">Drop Down</a>
+                        <li class="drop-down"><a href="">Events</a>
                             <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li class="drop-down"><a href="#">Drop Down 2</a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                                <li><a href="#">Drop Down 5</a></li>
+                                <li><a href="#">Wedding</a></li>
+                                <li><a href="#">Parties</a></li>
+                                <li><a href="#">Special Events</a></li>
                             </ul>
                         </li>
                         <li><a href="login">Login</a></li>
@@ -117,10 +107,6 @@
                 </div>
                 <div class="copyright">
                     &copy; Copyright <strong><span>Evening Unfold Events</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                 </div>
             </div>
         </footer><!-- End Footer -->

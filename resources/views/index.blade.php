@@ -5,13 +5,13 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Evening Unfold Events</title>
+        <title>Home - Evening Unfold Events</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
         <!-- Favicons -->
         <link href="/assets/img/favicon.png" rel="icon">
-        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="/assets/img/weddingle-touch-icon.png" rel="weddingle-touch-icon">
 
         <!-- Google Fonts -->
         <link
@@ -54,21 +54,11 @@
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#team">Team</a></li>
-                        <li class="drop-down"><a href="">Drop Down</a>
+                        <li class="drop-down"><a href="">Events</a>
                             <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li class="drop-down"><a href="#">Drop Down 2</a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                                <li><a href="#">Drop Down 5</a></li>
+                                <li><a href="#">Wedding</a></li>
+                                <li><a href="#">Parties</a></li>
+                                <li><a href="#">Special Events</a></li>
                             </ul>
                         </li>
                         <li><a href="/login">Login</a></li>
@@ -88,9 +78,7 @@
                     <div class="carousel-container">
                         <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Evening Unfold Events</span></h2>
                         <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                            tempore modi architecto.</p>
+                            Providing you the
                         <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                             More</a>
                     </div>
@@ -163,200 +151,36 @@
                         <p>Who we are</p>
                     </div>
 
-                    <div class="row content" data-aos="fade-up">
+                    <div class="row content text-justify" data-aos="fade-up">
                         <div class="col-lg-6">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore
-                                magna aliqua.
+                                Evening Unfold Events is a 360 degree agency working in the areas of Events, Digital Marketing and Creative Brand
+                                Solutions. Founded first in the year 2000 as Pakistan`s first ever event management company Evening Unfold Events has come a long way
+                                emerging and excelling in the fields of marketing and branding.
+
+                                Headquartered in Lahore, Pakistan
                             </p>
                             <ul>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat</li>
-                                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in
-                                    voluptate velit</li>
-                                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat</li>
+                                <li><i class="ri-check-double-line"></i> We are the only Bespoke events agency from Pakistan to have an International existence
+                                as well.</li>
+                                <li><i class="ri-check-double-line"></i> As the premier event planning company in Pakistan we know that it’s not “one size fits all”. Each event and client is
+                                unique and we believe our services should be as well.</li>
                             </ul>
                         </div>
                         <div class="col-lg-6 pt-4 pt-lg-0">
                             <p>
-                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
+                                With over 18 years of experience we are known to create out of the box brand stories across various platforms to produce
+                                effective and enduring results in today’s rapidly evolving marketplace.
                             </p>
-                            <a href="#" class="btn-learn-more">Learn More</a>
+                            <p>
+                                We like re-imagining the future for our clients and to break new grounds and revolutionize the brand stories through the
+                                campaigns that we create.
+                            </p>
                         </div>
                     </div>
 
                 </div>
             </section><!-- End About Section -->
-
-            <!-- ======= Features Section ======= -->
-            <section id="features" class="features">
-                <div class="container">
-
-                    <ul class="nav nav-tabs row d-flex">
-                        <li class="nav-item col-3" data-aos="zoom-in">
-                            <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                                <i class="ri-gps-line"></i>
-                                <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
-                            </a>
-                        </li>
-                        <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
-                            <a class="nav-link" data-toggle="tab" href="#tab-2">
-                                <i class="ri-body-scan-line"></i>
-                                <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
-                            </a>
-                        </li>
-                        <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
-                            <a class="nav-link" data-toggle="tab" href="#tab-3">
-                                <i class="ri-sun-line"></i>
-                                <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
-                            </a>
-                        </li>
-                        <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
-                            <a class="nav-link" data-toggle="tab" href="#tab-4">
-                                <i class="ri-store-line"></i>
-                                <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content" data-aos="fade-up">
-                        <div class="tab-pane active show" id="tab-1">
-                            <div class="row">
-                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                                    <p class="font-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore
-                                        magna aliqua.
-                                    </p>
-                                    <ul>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</li>
-                                        <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit
-                                            in voluptate velit.</li>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                    </ul>
-                                    <p>
-                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                        in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                    <img src="/assets/img/features-1.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-2">
-                            <div class="row">
-                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                    <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                                    <p>
-                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                        in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum
-                                    </p>
-                                    <p class="font-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore
-                                        magna aliqua.
-                                    </p>
-                                    <ul>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</li>
-                                        <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit
-                                            in voluptate velit.</li>
-                                        <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum
-                                            asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                    <img src="/assets/img/features-2.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-3">
-                            <div class="row">
-                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                    <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda
-                                    </h3>
-                                    <p>
-                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                        in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum
-                                    </p>
-                                    <ul>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</li>
-                                        <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit
-                                            in voluptate velit.</li>
-                                        <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum
-                                            asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                                    </ul>
-                                    <p class="font-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore
-                                        magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                    <img src="/assets/img/features-3.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-4">
-                            <div class="row">
-                                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                    <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
-                                    <p>
-                                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                        in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum
-                                    </p>
-                                    <p class="font-italic">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore
-                                        magna aliqua.
-                                    </p>
-                                    <ul>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</li>
-                                        <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit
-                                            in voluptate velit.</li>
-                                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                    <img src="/assets/img/features-4.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section><!-- End Features Section -->
-
 
             <!-- ======= Services Section ======= -->
             <section id="services" class="services">
@@ -434,125 +258,125 @@
 
                     <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
                         <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">Wedding</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter=".filter-wedding">Wedding</li>
+                        <li data-filter=".filter-party">Party</li>
+                        <li data-filter=".filter-Events">Special Events</li>
                     </ul>
 
                     <div class="row portfolio-container" data-aos="fade-up">
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-1.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
+                                <h4>Wedding 1</h4>
+                                <p>Wedding</p>
                                 <a href="/assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="Wedding 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-Events">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-2.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
+                                <h4>Events 3</h4>
+                                <p>Events</p>
                                 <a href="/assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="Events 3"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-3.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>App</p>
+                                <h4>Wedding 2</h4>
+                                <p>Wedding</p>
                                 <a href="/assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="Wedding 2"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-party">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-4.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
+                                <h4>party 2</h4>
+                                <p>party</p>
                                 <a href="/assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="party 2"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-Events">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-5.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>Web 2</h4>
-                                <p>Web</p>
+                                <h4>Events 2</h4>
+                                <p>Events</p>
                                 <a href="/assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="Events 2"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-6.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
+                                <h4>Wedding 3</h4>
+                                <p>Wedding</p>
                                 <a href="/assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="wedding 3"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-party">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-7.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
+                                <h4>party 1</h4>
+                                <p>party</p>
                                 <a href="/assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="party 1"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-party">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-8.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
+                                <h4>party 3</h4>
+                                <p>party</p>
                                 <a href="/assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="party 3"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-Events">
                             <div class="portfolio-img"><img src="/assets/img/portfolio/portfolio-9.jpg" class="img-fluid"
                                     alt=""></div>
                             <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
+                                <h4>Events 3</h4>
+                                <p>Events</p>
                                 <a href="/assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery"
-                                    class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                                    class="venobox preview-link" title="Events 3"><i class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" class="details-link" title="More Details"><i
                                         class="bx bx-link"></i></a>
                             </div>
@@ -664,7 +488,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Buy Now</a>
+                                    <a href="#" class="btn-buy">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -680,7 +504,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Buy Now</a>
+                                    <a href="#" class="btn-buy">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -696,7 +520,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Buy Now</a>
+                                    <a href="#" class="btn-buy">Read More</a>
                                 </div>
                             </div>
                         </div>
