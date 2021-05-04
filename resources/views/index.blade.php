@@ -42,7 +42,7 @@
 
                 <div class="logo mr-auto">
                     <h1 class="text-light"><a href="/">Happy Snaps</a></h1>
-                    
+
                 </div>
 
                 <nav class="nav-menu d-none d-lg-block">
@@ -55,7 +55,7 @@
                         <li><a href="#team">Team</a></li>
                         <li class="drop-down"><a href="">Events</a>
                             <ul>
-                                <li><a href="#">Wedding</a></li>
+                                <li><a href="/EventDetails">Wedding</a></li>
                                 <li><a href="#">Parties</a></li>
                                 <li><a href="#" >Special Eves</a></li>
                             </ul>
