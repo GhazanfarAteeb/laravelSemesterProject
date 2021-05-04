@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>@yield('selected_page') - Evening Unfold Events</title>
+        <title>@yield('selected_page') - Happy Snaps</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
@@ -40,9 +40,8 @@
             <div class="container d-flex align-items-center">
 
                 <div class="logo mr-auto">
-                    <h1 class="text-light"><a href="index.html">Evening Unfold Events</a></h1>
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <!-- <a href="index.html"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                    <h1 class="text-light"><a href="index.html">Happy Snaps</a></h1>
+                    
                 </div>
 
                 <nav class="nav-menu d-none d-lg-block">
@@ -57,7 +56,7 @@
                             <ul>
                                 <li><a href="#">Wedding</a></li>
                                 <li><a href="#">Parties</a></li>
-                                <li><a href="#">Special Events</a></li>
+                                <li><a href="#">Special Eves</a></li>
                             </ul>
                         </li>
                         <li><a href="login">Login</a></li>
@@ -96,7 +95,7 @@
         <!-- ======= Footer ======= -->
         <footer id="footer">
             <div class="container">
-                <h3>Evening Unfold Events</h3>
+                <h3>Happy Snaps</h3>
                 <p>All kinds of events are done professionally.</p>
                 <div class="social-links">
                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -106,7 +105,7 @@
                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 </div>
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Evening Unfold Events</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Happy Snaps</span></strong>. All Rights Reserved
                 </div>
             </div>
         </footer><!-- End Footer -->

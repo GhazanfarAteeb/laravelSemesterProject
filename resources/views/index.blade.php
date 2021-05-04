@@ -5,13 +5,13 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Home - Evening Unfold Events</title>
+        <title>Home - Happy Snaps</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
         <!-- Favicons -->
         <link href="/assets/img/favicon.png" rel="icon">
-        <link href="/assets/img/weddingle-touch-icon.png" rel="weddingle-touch-icon">
+        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
         <link
@@ -41,9 +41,8 @@
             <div class="container d-flex align-items-center">
 
                 <div class="logo mr-auto">
-                    <h1 class="text-light"><a href="index.html">Evening Unfold Events</a></h1>
-                    <!-- Uncomment below if you prefer to use an image logo -->
-                    <!-- <a href="index.html"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                    <h1 class="text-light"><a href="/">Happy Snaps</a></h1>
+                    
                 </div>
 
                 <nav class="nav-menu d-none d-lg-block">
@@ -58,7 +57,7 @@
                             <ul>
                                 <li><a href="#">Wedding</a></li>
                                 <li><a href="#">Parties</a></li>
-                                <li><a href="#">Special Events</a></li>
+                                <li><a href="#" >Special Eves</a></li>
                             </ul>
                         </li>
                         <li><a href="/login">Login</a></li>
@@ -76,10 +75,11 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="carousel-container">
-                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Evening Unfold Events</span></h2>
-                        <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Providing you the
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Happy Snaps</span></h2>
+                        <p class="animate__animated fanimate__adeInUp">
+                            Providing you with the best event management service.
+                        </p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn
                             More</a>
                     </div>
                 </div>
@@ -87,12 +87,11 @@
                 <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="carousel-container">
-                        <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                            tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                        <h2 class="animate__animated animate__fadeInDown">Represention in International Market</h2>
+                        <p class="animate__animated animate__fadeInUp">
+                           We are the only Bespoke events agency from Pakistan to have an International existence as well.
+                        </p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn
                             More</a>
                     </div>
                 </div>
@@ -100,12 +99,12 @@
                 <!-- Slide 3 -->
                 <div class="carousel-item">
                     <div class="carousel-container">
-                        <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                            Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                            tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                        <h2 class="animate__animated animate__fadeInDown">Premier Event Planners</h2>
+                        <p class="animate__animated animate__fadeInUp">
+                            As the premier event planning company in Pakistan we know that it’s not “one size fits all”.
+                            Each event and client is unique and we believe our services should be as well.
+                        </p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn
                             More</a>
                     </div>
                 </div>
@@ -154,8 +153,8 @@
                     <div class="row content text-justify" data-aos="fade-up">
                         <div class="col-lg-6">
                             <p>
-                                Evening Unfold Events is a 360 degree agency working in the areas of Events, Digital Marketing and Creative Brand
-                                Solutions. Founded first in the year 2000 as Pakistan`s first ever event management company Evening Unfold Events has come a long way
+                                Happy Snaps is a 360 degree agency working in the areas of Events, Digital Marketing and Creative Brand
+                                Solutions. Founded first in the year 2000 as Pakistan`s first ever event management company Happy Snaps has come a long way
                                 emerging and excelling in the fields of marketing and branding.
 
                                 Headquartered in Lahore, Pakistan
@@ -256,11 +255,11 @@
                         <p>What we've done</p>
                     </div>
 
-                    <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
+                    <ul id="portfolio-flters" class="d-flex justify-content-end text-center" data-aos="fade-up">
                         <li data-filter="*" class="filter-active">All</li>
                         <li data-filter=".filter-wedding">Wedding</li>
                         <li data-filter=".filter-party">Party</li>
-                        <li data-filter=".filter-Events">Special Events</li>
+                        <li data-filter=".filter-Events">Special Eves</li>
                     </ul>
 
                     <div class="row portfolio-container" data-aos="fade-up">
@@ -488,7 +487,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Read More</a>
+                                    <a href="#" class="btn-buy">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -504,13 +503,13 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Read More</a>
+                                    <a href="#" class="btn-buy">Learn More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
                             <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
-                                <h3>Special Events</h3>
+                                <h3>Special Eves</h3>
                                 <h4><sup>$</sup>19<span> / month</span></h4>
                                 <ul>
                                     <li>Aida dere</li>
@@ -520,7 +519,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Read More</a>
+                                    <a href="#" class="btn-buy">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -543,7 +542,7 @@
                             <a data-toggle="collapse" class="" href="#faq1">What services do we offer? <i class="icofont-simple-up"></i></a>
                             <div id="faq1" class="collapse show" data-parent=".faq-list">
                                 <p>
-                                    We are event organizers and providing our customers the best memories for their special events.
+                                    We are event organizers and providing our customers the best memories for their Special Eves.
                                 </p>
                             </div>
                         </li>
@@ -741,7 +740,7 @@
         <!-- ======= Footer ======= -->
         <footer id="footer">
             <div class="container">
-                <h3>Evening Unfold Events</h3>
+                <h3>Happy Snaps</h3>
                 <p>All kinds of events are done professionally.</p>
                 <div class="social-links">
                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -751,7 +750,7 @@
                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 </div>
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Evening Unfold Events</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Happy Snaps</span></strong>. All Rights Reserved
                 </div>
             </div>
         </footer><!-- End Footer -->
