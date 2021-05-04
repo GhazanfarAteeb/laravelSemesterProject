@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RedirectingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,5 +20,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('Wedding',function() {
-    return view('layouts.EventDetail');
+    return view('Wedding');
+});
+Route::get('Parties',function() {
+    return view('Parties');
+});
+Route::get('SpecialEves',function() {
+    return view('SpecialEves');
 });
