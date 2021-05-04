@@ -41,7 +41,7 @@
 
                 <div class="logo mr-auto">
                     <h1 class="text-light"><a href="index.html">Happy Snaps</a></h1>
-                    
+
                 </div>
 
                 <nav class="nav-menu d-none d-lg-block">
@@ -52,7 +52,7 @@
                         <li><a href="/#portfolio">Portfolio</a></li>
                         <li><a href="/#pricing">Pricing</a></li>
                         <li><a href="/#team">Team</a></li>
-                        <li class="drop-down"><a href="">Events</a>
+                        <li class="drop-down"><a href="/#portfolio">Events</a>
                             <ul>
                                 <li><a href="#">Wedding</a></li>
                                 <li><a href="#">Parties</a></li>
