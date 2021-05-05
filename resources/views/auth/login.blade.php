@@ -61,11 +61,11 @@
                                 <button type="submit" class="btn btn-primary">
                                     <a href="register" class="text-white">Register</a>
                                 </button>
-                                @if (Route::has('password.request'))
+                                {{-- @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                @endif
+                                @endif --}}
 
                             </div>
                         </div>
