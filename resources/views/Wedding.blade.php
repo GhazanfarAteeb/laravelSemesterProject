@@ -1,4 +1,5 @@
 @extends('layouts.EventDetail')
+@section('selected_page','Weddings')
 @section('Content')
 <div class="container">
     <div class="row">
