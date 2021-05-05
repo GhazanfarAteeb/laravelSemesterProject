@@ -27,7 +27,23 @@
     <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="/assets/vendor/owl.carousel//assets/owl.carousel.min.css" rel="stylesheet">
     <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-
+    <style>
+        h1 {
+            color:#ef6603;
+        }
+        h2 {
+            color:#ef6603;
+        }
+        h3 {
+            color:#ef6603;
+        }
+        h4 {
+            color:#ef6603;
+        }
+        h5 {
+            color:#ef6603;
+        }
+    </style>
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
 </head>
@@ -67,96 +83,80 @@
         </header>
         <main id="main">
             <section>
+                @yield('Content')
+            </section>
+            <section class="contact">
                 <div class="container">
-                    <div class="row">
 
-                        <div class="col-lg-8">
-                            <!-- Title-->
-                            <h1 class="mt-4">Post Title</h1>
-                            <!-- Author-->
-                            <p class="lead">
-                                by
-                                <a href="#!">Start Bootstrap</a>
-                            </p>
-                            <hr />
-                            <!-- Date and time-->
-                            <p>Posted on January 1, 2021 at 12:00 PM</p>
-                            <hr />
-                            <!-- Preview image-->
-                            <img class="img-fluid rounded" src="https://via.placeholder.com/900x300" alt="..." />
-                            <hr />
-                            <!-- Post content-->
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati,
-                                aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni
-                                recusandae laborum minus inventore?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum
-                                quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat.
-                                Temporibus, voluptatibus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto
-                                blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione
-                                repellat perspiciatis. Enim, iure!</p>
-                            <blockquote class="blockquote">
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                                    ante.</p>
-                                <footer class="blockquote-footer">
-                                    Someone famous in
-                                    <cite title="Source Title">Source Title</cite>
-                                </footer>
-                            </blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas
-                                placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem
-                                obcaecati?</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo,
-                                aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam
-                                recusandae? Qui, necessitatibus, est!</p>
-                            <hr />
-                            <!-- Comments form-->
+                    <div class="section-title" data-aos="zoom-out">
+                        <h2>Contact</h2>
+                        <p>Contact Us</p>
+                    </div>
 
-                            <!-- Single comment-->
-                            <div class="media mb-4">
-                                <img class="d-flex mr-3 rounded-circle" src="https://via.placeholder.com/50x50" alt="..." />
-                                <div class="media-body">
-                                    <h5 class="mt-0">Commenter Name</h5>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                                    Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                    ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <div class="row mt-5">
+                        <div class="col-lg-4" data-aos="fade-right">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="icofont-google-map"></i>
+                                    <h4>Location:</h4>
+                                    <p>AA Block, Sector D, Bahria Town, Lahore</p>
                                 </div>
+
+                                <div class="email">
+                                    <i class="icofont-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>ghazanfar.ateeb9125@gmail.com</p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="icofont-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+92 310 9453603</p>
+                                </div>
+
                             </div>
-                            <!-- Comment with nested comments-->
-                            <div class="media mb-4">
-                                <img class="d-flex mr-3 rounded-circle" src="https://via.placeholder.com/50x50" alt="..." />
-                                <div class="media-body">
-                                    <h5 class="mt-0">Commenter Name</h5>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                                    Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                                    ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                    <div class="media mt-4">
-                                        <img class="d-flex mr-3 rounded-circle" src="https://via.placeholder.com/50x50" alt="..." />
-                                        <div class="media-body">
-                                            <h5 class="mt-0">Commenter Name</h5>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                            sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                            Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
-                                        </div>
+
+                        </div>
+
+                        <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-row">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                            data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validate"></div>
                                     </div>
-                                    <div class="media mt-4">
-                                        <img class="d-flex mr-3 rounded-circle" src="https://via.placeholder.com/50x50" alt="..." />
-                                        <div class="media-body">
-                                            <h5 class="mt-0">Commenter Name</h5>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                            sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                                            Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
-                                            faucibus.
-                                        </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                            data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validate"></div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required"
+                                        data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+
                         </div>
 
                     </div>
+
                 </div>
-            </section>
+            </section><!-- End Contact Section -->
         </main>
         <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
     <!-- ======= Footer ======= -->

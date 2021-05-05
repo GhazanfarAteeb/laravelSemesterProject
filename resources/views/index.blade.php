@@ -374,7 +374,7 @@
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                 This is the best and quality service for event management where you can customize your most
-                                special events at ease.
+                                special events and menu according to the need.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                             <img src="/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
@@ -385,9 +385,8 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                We are always having troubles in dealing with clients urgent meetings. One of my friend
-                                suggested them and I gave them a try for meeting calls. They have a very reasonable price
-                                and have very good management.
+                                We are always having troubles in dealing with clients. One of my friend
+                                suggested them and I tried them. They have a very reasonable price.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                             <img src="/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -398,7 +397,7 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                I love parties and I always call them for party arrangements. They are reallly good in their job.
+                                I love parties and I always call them for party arrangements. They are really doing a hardworking job. Much appreciations for them.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                             <img src="/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
@@ -421,7 +420,7 @@
                         <div class="testimonial-item">
                             <p>
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                They helped me in preparing for my urgent meeting. They provided us with best refreshments and our clients also appreciated us for the arrangements.
+                                They have the best refreshments and and arrangement. Our clients also appreciated us for the arrangements of the meeting.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                             <img src="/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -471,7 +470,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Learn More</a>
+                                    <a href="/Parties" class="btn-buy">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -487,7 +486,7 @@
                                     <li class="na">Massa ultricies mi</li>
                                 </ul>
                                 <div class="btn-wrap">
-                                    <a href="#" class="btn-buy">Learn More</a>
+                                    <a href="/SpecialEves" class="btn-buy">Learn More</a>
                                 </div>
                             </div>
                         </div>
