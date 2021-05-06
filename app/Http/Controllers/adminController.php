@@ -9,7 +9,6 @@ class adminController extends Controller
     public function adminPanel() {
         if(session()->has('login')) {
             return view('admin');
-
         }
         else {
             return route('login');
