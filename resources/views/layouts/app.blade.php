@@ -77,7 +77,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>AdminLTE 3 | Dashboard</title>
+        <title>Happy Snaps | Dashboard</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <!-- Scripts -->
@@ -107,10 +107,9 @@
     <body class="hold-transition sidebar-mini layout-fixed">
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+            <a href="/admin" class="brand-link">
+                <img src="/assets/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Happy Snaps</span>
             </a>
 
             <!-- Sidebar -->
@@ -118,10 +117,10 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="/assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">{{Auth::user()->name}}</a>
                     </div>
                 </div>
 
@@ -739,11 +738,12 @@
                         </li>
                         <li class="nav-item">
                             <div class="nav-link" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                                                 document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <i class="nav-icon fas fa-sign-out-alt" aria-hidden="true"></i>
+                                    <p>
+                                        Logout
+                                    </p>
                                 </a>
-
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
