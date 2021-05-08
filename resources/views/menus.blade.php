@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Orders</h1>
+                    <h1 class="m-0">Menu</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -35,7 +35,7 @@
                                             </button>
 
                                             <button type="submit" class="btn btn-primary">
-                                                Add Order
+                                                Add Menu
                                             </button>
                                         </div>
                                     </div>
@@ -49,39 +49,39 @@
                                                 colspan="1" aria-sort="ascending"
                                                 aria-label="Order ID">Order ID</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Customer Name">Customer Name</th>
+                                                aria-label="Customer Name">Item Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Contact No.">Contact No.</th>
+                                                aria-label="Quantity">Quantity</th>
                                                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Customer Name">
-                                                    Event Type
+                                                    Order ID
                                                 </th>
                                                     <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Customer Name">
-                                                        Event State
+                                                        Price Per Unit
                                                     </th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Engine version: activate to sort column ascending">Bill</th>
+                                                aria-label="Engine version: activate to sort column ascending">Total</th>
                                                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
                                                     aria-label="Engine version: activate to sort column ascending">Operations</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($orders as $order)
+                                        @foreach ($menus as $menu)
                                             <tr>
-                                                <td class="dtr-control sorting_1" tabindex="0">{{$order->id}}</td>
-                                                <td>{{$order->CustomerName}}</td>
-                                                <td>{{$order->ContactNo}}</td>
-                                                <td>{{$order->EventType}}</td>
-                                                <td>{{$order->EventState}}</td>
-                                                <td>{{$order->Bill}}</td>
+                                                <td class="dtr-control sorting_1" tabindex="0">{{$menu->id}}</td>
+                                                <td>{{$menu->ItemName}}</td>
+                                                <td>{{$menu->quantity}}</td>
+                                                <td>{{$menu->OrderID}}</td>
+                                                <td>{{$menu->unitPrice}}</td>
+                                                <td>{{$menu->unitPrice * $menu->quantity}}</td>
                                                 <td class="text-center">
                                                     <button type="submit" class="btn btn-primary mr-2">
-                                                        <a href="update/{{$order->id}}" class="text-white">
+                                                        <a href="updateMenu/{{$menu->id}}" class="text-white">
                                                             Update
                                                         </a>
                                                     </button>
 
                                                     <button type="submit" class="btn btn-danger">
-                                                        <a href="delete/{{$order->id}}" class="text-white">
+                                                        <a href="deleteMenu/{{$menu->id}}" class="text-white">
                                                             Delete
                                                         </a>
                                                     </button>
@@ -95,20 +95,20 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-md-5">
-                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing results from {{(($orders->currentPage()-1)*10)+1}} to {{($orders->currentPage()-1)*10+$orders->count()}} </div>
+                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing results from {{(($menus->currentPage()-1)*10)+1}} to {{($menus->currentPage()-1)*10+$menus->count()}} </div>
                             </div>
                             <div class="col-sm-12 col-md-7">
                                 <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
                                     <ul class="pagination">
-                                        <li class="paginate_button page-item previous" id="example2_previous"><a href="{{$orders->previousPageUrl()}}"
+                                        <li class="paginate_button page-item previous" id="example2_previous"><a href="{{$menus->previousPageUrl()}}"
                                                 aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
                                         </li>
-                                        @for ($i=1;$i<=$orders->lastPage();$i++)
-                                            <li class="paginate_button page-item"><a href="{{$orders->url($i)}}" aria-controls="example2" data-dt-idx="1" tabindex="0"
+                                        @for ($i=1;$i<=$menus->lastPage();$i++)
+                                            <li class="paginate_button page-item"><a href="{{$menus->url($i)}}" aria-controls="example2" data-dt-idx="1" tabindex="0"
                                                     class="page-link">{{$i}}</a></li>
                                         @endfor
 
-                                        <li class="paginate_button page-item next" id="example2_next"><a href="{{$orders->nextPageUrl()}}"
+                                        <li class="paginate_button page-item next" id="example2_next"><a href="{{$menus->nextPageUrl()}}"
                                                 aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
                                     </ul>
                                 </div>

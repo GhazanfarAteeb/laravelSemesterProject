@@ -15,7 +15,7 @@ class CreateCustomerMenusTable extends Migration
     {
         Schema::create('customer_menus', function (Blueprint $table) {
             $table->id();
-            $table->string('Item Name');
+            $table->string('ItemName');
             $table->integer('quantity');
             $table->integer('OrderID');
             $table->double('unitPrice');

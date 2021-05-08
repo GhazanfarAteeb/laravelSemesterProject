@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Exception;
+use App\Models\customerMenu;
 use Illuminate\Http\Request;
 use App\Models\order;
 class HomeController extends Controller
@@ -47,6 +48,52 @@ class HomeController extends Controller
         return view('orders',[
             'orders'=>$orders
         ]);
+    }
+
+    public function deleteOrder($id) {
+        $order = order::find($id);
+        if ($order) {
+            $order->delete();
+        }
+        return redirect('orders');
+    }
+
+     public function deleteMenu($id) {
+        $customerMenu = customerMenu::find($id);
+        if ($customerMenu) {
+            $customerMenu->delete();
+        }
+        return redirect('menu');
+    }
+
+    public function menu()  {
+        $menus = customerMenu::paginate(10);
+        return view('menus',[
+            'menus'=>$menus
+        ]);
+    }
+
+    public function customerMenu()  {
+        $orders=null;
+        return view('customerMenu',['order'=>$orders]);
+    }
+
+    public function CustomerMenuPost(Request $req) {
+        try {
+            $orders = order::findOrFail($req->input('searchBar'));
+
+
+            $menus = customerMenu::where('OrderID',$req->input('searchBar'))->get();
+            return view('customerMenu',[
+                'order'=>$orders,
+                'menus'=>$menus
+            ]);
+        } catch( Exception $ex) {
+            $orders=null;
+            return view('customerMenu',['order'=>$orders]);
+        }
+
+
     }
 
     public function orders() {

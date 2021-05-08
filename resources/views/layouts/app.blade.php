@@ -153,6 +153,30 @@
                                 </a>
                             </li>
                             <li class="nav-item">
+                                <a href="/menu" class="nav-link">
+                                    <i class="nav-icon fa fa-bars" aria-hidden="true"></i>
+                                    <p>
+                                        Menu
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/customerMenu" class="nav-link">
+                                    <i class="nav-icon fa fa-list-alt" aria-hidden="true"></i>
+                                    <p>
+                                        Customer Menu
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/#" class="nav-link">
+                                    <i class="nav-icon fa fa-user" aria-hidden="true"></i>
+                                    <p>
+                                        Add User
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <div class="nav-link" aria-labelledby="navbarDropdown">
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -173,9 +197,9 @@
                 <!-- /.sidebar -->
             </aside>
             @yield('content')
-            
-        <!-- jQuery -->
 
+        <!-- jQuery -->
+            <script src="/assets/vendor/jquery/jquery.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="/assets/vendor/jquery-ui/jquery-ui.min.js"></script>
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -208,7 +232,5 @@
         <script src="/assets/vendor/demo/demo.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="/assets/vendor/dashboard/dashboard.js"></script>
-
-
     </body>
 </html>
