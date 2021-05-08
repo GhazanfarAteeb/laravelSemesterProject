@@ -29,3 +29,4 @@ Route::get('SpecialEves',function() {
 Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
+Route::get('/orders',[App\Http\Controllers\HomeController::class, 'orders'])->name('orders');

@@ -12,7 +12,7 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <h3 class="text-center">
-                            Admin Login
+                            Login
                         </h3>
                         <hr />
                         <div class="form-group row">

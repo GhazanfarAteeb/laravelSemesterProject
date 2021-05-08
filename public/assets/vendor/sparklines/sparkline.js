@@ -7,6 +7,9 @@
     // only CommonJS-like enviroments that support module.exports,
     // like Node.
     module.exports = factory();
+  } else {
+    // Browser globals (root is window)
+    root.Sparkline = factory();
   }
 }(window, function () {
   function extend(specific, general) {
@@ -16,6 +19,49 @@
     }
     return obj;
   }
+
+  function Sparkline(element, options) {
+    this.element = element;
+    this.options = extend(options || {}, Sparkline.options);
+
+    init: {
+      this.element.innerHTML = "<canvas></canvas>";
+      this.canvas = this.element.firstChild;
+      this.context = this.canvas.getContext("2d");
+      this.ratio = window.devicePixelRatio || 1;
+
+      if (this.options.tooltip) {
+        this.canvas.style.position = "relative";
+        this.canvas.onmousemove = showTooltip.bind(this);
+      }
+    }
+  }
+
+  Sparkline.options = {
+    width: 100,
+    height: null,
+    lineColor: "black",
+    lineWidth: 1.5,
+    startColor: "transparent",
+    endColor: "black",
+    maxColor: "transparent",
+    minColor: "transparent",
+    minValue: null,
+    maxValue: null,
+    minMaxValue: null,
+    maxMinValue: null,
+    dotRadius: 2.5,
+    tooltip: null,
+    fillBelow: true,
+    fillLighten: 0.5,
+    startLine: false,
+    endLine: false,
+    minLine: false,
+    maxLine: false,
+    bottomLine: false,
+    topLine: false,
+    averageLine: false
+  };
 
   Sparkline.init = function (element, options) {
     return new Sparkline(element, options);
