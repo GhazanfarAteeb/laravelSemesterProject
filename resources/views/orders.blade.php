@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">DataTable with default features</h3>
+                    <h2 class="card-title">Orders</h2>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -83,7 +83,7 @@
                                                 data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
 
                                         <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="6"
-                                                tabindex="0" class="page-link">6</a></li>
+                                                tabindex="0" class="page-link">2</a></li>
                                         <li class="paginate_button page-item next" id="example2_next"><a href="#"
                                                 aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
                                     </ul>
