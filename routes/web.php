@@ -30,3 +30,5 @@ Auth::routes();
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
 Route::get('/orders',[App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
+Route::get('/newOrders',[App\Http\Controllers\HomeController::class,'newOrders'])->name('newOrders');
+Route::get('/completedOrders',[App\Http\Controllers\HomeController::class,'completedOrders'])->name('completedOrders');

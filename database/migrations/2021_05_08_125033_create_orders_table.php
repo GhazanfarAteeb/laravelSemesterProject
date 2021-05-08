@@ -17,7 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('CustomerName');
             $table->string('ContactNo');
-            $table->integer('EventID');
+            $table->string('EventType');
+            $table->string('EventState');
             $table->double('Bill');
             $table->integer('menuID');
             $table->timestamps();

@@ -2,12 +2,18 @@
 @section('content')
 
 <div class="content-wrapper" style="min-height: 1302.4px;">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Orders</h1>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
     <section class="content">
         <div class="container-fluid">
             <div class="card">
-                <div class="card-header">
-                    <h2 class="card-title">Orders</h2>
-                </div>
                 <!-- /.card-header -->
                 <div class="card-body">
                     <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
@@ -37,32 +43,32 @@
                                         <tr role="row">
                                             <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1"
                                                 colspan="1" aria-sort="ascending"
-                                                aria-label="Rendering engine: activate to sort column descending">Rendering engine</th>
+                                                aria-label="Order ID">Order ID</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Browser: activate to sort column ascending">Browser</th>
+                                                aria-label="Customer Name">Customer Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Platform(s): activate to sort column ascending">Platform(s)</th>
+                                                aria-label="Contact No.">Contact No.</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Customer Name">
+                                                    Event Type
+                                                </th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Customer Name">
+                                                        Event State
+                                                    </th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Engine version: activate to sort column ascending">Engine version</th>
-                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="CSS grade: activate to sort column ascending">CSS grade</th>
+                                                aria-label="Engine version: activate to sort column ascending">Bill</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd">
-                                            <td class="dtr-control sorting_1" tabindex="0">Gecko</td>
-                                            <td>Firefox 1.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.7</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr class="even">
-                                            <td class="dtr-control sorting_1" tabindex="0">Gecko</td>
-                                            <td>Firefox 1.5</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.8</td>
-                                            <td>A</td>
-                                        </tr>
+                                        @foreach ($orders as $order)
+                                            <tr>
+                                                <td class="dtr-control sorting_1" tabindex="0">{{$order->id}}</td>
+                                                <td>{{$order->CustomerName}}</td>
+                                                <td>{{$order->ContactNo}}</td>
+                                                <td>{{$order->EventType}}</td>
+                                                <td>{{$order->EventState}}</td>
+                                                <td>{{$order->Bill}}</td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
 
                                 </table>
@@ -70,21 +76,20 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-md-5">
-                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to 10 of 57
-                                    entries</div>
+                                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing results from {{(($orders->currentPage()-1)*10)+1}} to {{($orders->currentPage()-1)*10+$orders->count()}} </div>
                             </div>
                             <div class="col-sm-12 col-md-7">
                                 <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
                                     <ul class="pagination">
-                                        <li class="paginate_button page-item previous disabled" id="example2_previous"><a href="#"
+                                        <li class="paginate_button page-item previous" id="example2_previous"><a href="{{$orders->previousPageUrl()}}"
                                                 aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
                                         </li>
-                                        <li class="paginate_button page-item active"><a href="#" aria-controls="example2"
-                                                data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                        @for ($i=1;$i<=$orders->lastPage();$i++)
+                                            <li class="paginate_button page-item"><a href="{{$orders->url($i)}}" aria-controls="example2" data-dt-idx="1" tabindex="0"
+                                                    class="page-link">{{$i}}</a></li>
+                                        @endfor
 
-                                        <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="6"
-                                                tabindex="0" class="page-link">2</a></li>
-                                        <li class="paginate_button page-item next" id="example2_next"><a href="#"
+                                        <li class="paginate_button page-item next" id="example2_next"><a href="{{$orders->nextPageUrl()}}"
                                                 aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
                                     </ul>
                                 </div>
