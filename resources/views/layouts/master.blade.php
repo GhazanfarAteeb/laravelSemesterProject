@@ -52,6 +52,7 @@
                         <li><a href="/#portfolio">Portfolio</a></li>
                         <li><a href="/#pricing">Pricing</a></li>
                         <li><a href="/#team">Team</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                         <li class="drop-down"><a href="">Events</a>
                             <ul>
                                 <li><a href="/Wedding">Wedding</a></li>
@@ -74,11 +75,7 @@
                 <div class="container">
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>@yield('selected_page')</h2>
-                        <ol>
-                            <li><a href="@yield('loaded_page')">@yield('selected_page')</a></li>
-                            <li><a href="@yield('unloaded_page')" class="text-black-50">@yield('unselected_page')</a></li>
-                        </ol>
+                        <h2 style="color:#ef6603;">@yield('selected_page')</h2>
                     </div>
 
                 </div>
@@ -124,7 +121,7 @@
 
         <!-- Template Main JS File -->
         <script src="/assets/js/main.js"></script>
-        
+
     </body>
 
 </html>
