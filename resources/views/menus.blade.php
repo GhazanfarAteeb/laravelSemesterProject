@@ -34,10 +34,6 @@
                                             <button type="submit" class="btn btn-primary mr-4">
                                             Search
                                             </button>
-
-                                            <button type="submit" class="btn btn-primary">
-                                                Add Menu
-                                            </button>
                                         </div>
                                     </div>
                                     <label></label>

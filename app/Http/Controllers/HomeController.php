@@ -5,6 +5,10 @@ use Exception;
 use App\Models\customerMenu;
 use Illuminate\Http\Request;
 use App\Models\order;
+use App\Models\User;
+
+use Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -105,8 +109,6 @@ class HomeController extends Controller
             $orders=null;
             return view('customerMenu',['order'=>$orders]);
         }
-
-
     }
 
     public function orders() {
@@ -114,5 +116,11 @@ class HomeController extends Controller
         return view('orders',[
             'orders'=>$orders
         ]);
+    }
+
+    public function profile() {
+        $user = User::find(Auth::id());
+
+         return view('profile',['User'=>$user]);
     }
 }
