@@ -43,6 +43,20 @@ class HomeController extends Controller
         ]);
     }
 
+
+
+    public function profile() {
+        $profilePic = Auth::user()->profilePic;
+        $user = User::find(Auth::id());
+
+         return view('profile',['User'=>$user,
+            'profilePic'=>$profilePic
+         ]);
+    }
+
+
+
+
     public function addOrder() {
         $profilePic=Auth::user()->profilePic;
         $totalOrders=order::all()->count();
@@ -89,6 +103,35 @@ class HomeController extends Controller
         return redirect('orders');
     }
 
+     public function orders() {
+        $profilePic = Auth::user()->profilePic;
+        $orders = order::paginate(10);
+        return view('orders',[
+            'orders'=>$orders,
+            'profilePic'=>$profilePic
+        ]);
+    }
+
+    public function addOrderPost(Request $req) {
+        $req->validate([
+            'name' =>'required',
+            'contact' => 'required'
+        ]);
+        $order=new Order();
+        $order->CustomerName = $req->input('name');
+        $order->ContactNo = $req->input('contact');
+        $order->EventState = $req->input('EventState');
+        $order->EventType = $req->input('EventType');
+        $order->Bill = 0;
+        $order->save();
+        return redirect('addCustomerMenu');
+    }
+
+
+
+
+
+
      public function deleteMenu($id) {
         $customerMenu = customerMenu::find($id);
         if ($customerMenu) {
@@ -113,6 +156,12 @@ class HomeController extends Controller
                 'profilePic'=>$profilePic
         ]);
     }
+
+
+
+
+
+
     public function customerMenu()  {
         $profilePic = Auth::user()->profilePic;
         $orders=null;
@@ -145,45 +194,30 @@ class HomeController extends Controller
         }
     }
 
-    public function orders() {
-        $profilePic = Auth::user()->profilePic;
-        $orders = order::paginate(10);
-        return view('orders',[
-            'orders'=>$orders,
-            'profilePic'=>$profilePic
-        ]);
-    }
-
-    public function profile() {
-        $profilePic = Auth::user()->profilePic;
-        $user = User::find(Auth::id());
-
-         return view('profile',['User'=>$user,
-            'profilePic'=>$profilePic
-         ]);
-    }
-
-    public function addOrderPost(Request $req) {
+    public function addCustomerMenuPost(Request $req) {
         $req->validate([
-            'name' =>'required',
-            'contact' => 'required'
+            'orderID'=>'required',
+            'itemName'=>'required',
+            'quantity'=>'required',
+            'unitPrice'=>'required'
         ]);
-        $order=new Order();
-        $order->CustomerName = $req->input('name');
-        $order->ContactNo = $req->input('contact');
-        $order->EventState = $req->input('EventState');
-        $order->EventType = $req->input('EventType');
-        $order->Bill = 0;
-        $order->save();
-        return redirect('addCustomerMenu');
+        $customerMenu = new customerMenu();
+        $customerMenu->ItemName = $req->input('itemName');
+        $customerMenu->quantity =$req->input('quantity');
+        $customerMenu->unitPrice = $req->input('unitPrice');
+        $customerMenu->orderID=$req->input('orderID');
+        $customerMenu->save();
+        if ($req->input('AddMore')=='AddMore') {
+            return redirect('addCustomerMenu');
+        }
+        else if($req->input('Done')=='Done') {
+            return redirect('menu');
+        }
     }
 
     public function addCustomerMenu() {
         $profilePic=Auth::user()->profilePic;
-        $totalOrders=order::all()->count();
-        $totalOrders++;
         return view('addCustomerMenu',[
-            'id'=>$totalOrders,
             'profilePic'=>$profilePic
         ]);
     }

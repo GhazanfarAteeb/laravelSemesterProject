@@ -27,8 +27,7 @@ class orderFactory extends Factory
             'ContactNo' => Str::random(10),
             'EventType' =>'Special Eves',
             'EventState' => 'Cancelled',
-            'Bill' =>rand(1,1000),
-            'menuID'=>1
+            'Bill' =>rand(1,1000)
         ];
     }
 }

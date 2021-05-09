@@ -6,7 +6,7 @@
     <div class="container bootstrap snippet">
         <div class="row">
             <div class="col-sm-10">
-                <h1>Add Order</h1>
+                <h1>Add Item</h1>
             </div>
             <div class="col-sm-2"><a href="/Users" class="pull-right"></a></div>
         </div>
@@ -15,7 +15,7 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home">
                     <hr>
-                    <form class="form" action="/addOrderPost" method="post">
+                    <form class="form" action="/addCustomerMenuPost" method="post">
                         @csrf
                         <div class="form-group">
 
@@ -23,18 +23,21 @@
                                 <label for="last_name">
                                     <h4>Order ID</h4>
                                 </label>
-                                <input type="text" class="form-control" name="orderID" value="{{$id}}" readonly>
+                                <input type="text" class="form-control" name="orderID">
+                                @error('itemName')
+                                <p class="text-danger">* This field is required</p>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="form-group">
 
                             <div class="col-xs-6">
-                                <label for="email">
-                                    <h4>Customer Name</h4>
+                                <label>
+                                    <h4>Item Name</h4>
                                 </label>
-                                <input type="text" class="form-control" name="name">
-                                @error('name')
+                                <input type="text" class="form-control" name="itemName">
+                                @error('itemName')
                                 <p class="text-danger">* This field is required</p>
                                 @enderror
                             </div>
@@ -42,11 +45,11 @@
                         <div class="form-group">
 
                             <div class="col-xs-6">
-                                <label for="email">
-                                    <h4>Contact No</h4>
+                                <label>
+                                    <h4>Quantity</h4>
                                 </label>
-                                <input type="text" class="form-control" name="contact">
-                                @error('contact')
+                                <input type="text" class="form-control" name="quantity">
+                                @error('quantity')
                                 <p class="text-danger">* This field is required</p>
                                 @enderror
                             </div>
@@ -54,43 +57,37 @@
                         <div class="form-group">
                             <div class="col-xs-6">
                                 <label>
-                                    <h4>Event Type</h4>
+                                    <h4>Unit Price</h4>
                                 </label>
-                                <select class="form-select form-control form-select-lg mb-3" name="EventType"
-                                    aria-label=".form-select-lg example">
-                                    <option value="Wedding" selected>Wedding</option>
-                                    <option value="Parties">Parties</option>
-                                    <option value="Special Eves">Special Eves</option>
-                                </select>
+                                <input type="text" class="form-control" name="unitPrice">
+                                @error('unitPrice')
+                                <p class="text-danger">* This field is required</p>
+                                @enderror
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-xs-6">
-                                <label>
-                                    <h4>Event State</h4>
-                                </label>
-                                <select class="form-select form-control form-select-lg mb-3" name="EventState"
-                                    aria-label=".form-select-lg example" readonly>
-                                    <option value="Not Started" selected>Not Started</option>
-                                </select>
+                        <div class="container">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <br>
+                                        <button class="btn btn-lg btn-success" name="Done" type="submit" value="Done">
+                                            <i class="glyphicon glyphicon-ok-sign"></i>
+                                            Done
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group ml-3">
+                                    <div class="col-xs-4">
+                                        <br>
+                                        <button class="btn btn-lg btn-info" name="AddMore" type="submit" value="AddMore">
+                                            <i class="glyphicon glyphicon-ok-sign"></i>
+                                            Add More
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
 
-                            <div class="col-xs-6">
-                                <label for="password2">
-                                    <h4>Bill</h4>
-                                </label>
-                                <input type="text" class="form-control" name="bill" value="0" readonly>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-xs-12">
-                                <br>
-                                <button class="btn btn-lg btn-success" type="submit"><i
-                                        class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                            </div>
-                        </div>
                     </form>
 
                     <hr>

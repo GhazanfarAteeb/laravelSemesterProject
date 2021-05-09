@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,20 +29,30 @@ Route::get('SpecialEves',function() {
 });
 Auth::routes();
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
-Route::get('/orders',[App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
-Route::get('/newOrders',[App\Http\Controllers\HomeController::class,'newOrders'])->name('newOrders');
-Route::get('/completedOrders',[App\Http\Controllers\HomeController::class,'completedOrders'])->name('completedOrders');
-Route::get('/deleteOrder/{id}',[App\Http\Controllers\HomeController::class,'deleteOrder'])->name('deleteOrders');
-Route::get('/menu',[App\Http\Controllers\HomeController::class,'menu'])->name('menu');
-Route::get('/deleteMenu/{id}',[App\Http\Controllers\HomeController::class,'deleteMenu'])->name('deleteMenu');
-Route::get('/customerMenu',[App\Http\Controllers\HomeController::class,'customerMenu'])->name('customerMenu');
-Route::get('/profile',[App\Http\Controllers\HomeController::class,'profile'])->name('profile');
-Route::post('/CustomerMenuPost',[App\Http\Controllers\HomeController::class,'CustomerMenuPost'])->name('CMP');
-Route::post('/orderPost',[App\Http\Controllers\HomeController::class,'orderPost'])->name('orderPost');
-Route::post('/menuPost',[App\Http\Controllers\HomeController::class,'menuPost'])->name('menuPost');
-Route::get('/addOrder',[App\Http\Controllers\HomeController::class,'addOrder'])->name('addOrder');
-Route::post('/addOrderPost',[App\Http\Controllers\HomeController::class,'addOrderPost'])->name('addOrderPost');
 
-Route::get('/addCustomerMenu',[App\Http\Controllers\HomeController::class,'addCustomerMenu'])->name('addCustomerMenu');
-Route::post('/addOrderPost',[App\Http\Controllers\HomeController::class,'addOrderPost'])->name('addOrderPost');
+Route::get('/admin', [HomeController::class, 'index'])->name('admin');
+
+Route::get('/profile',[HomeController::class,'profile'])->name('profile');
+
+
+Route::get('/menu',[HomeController::class,'menu'])->name('menu');
+Route::get('/deleteMenu/{id}',[HomeController::class,'deleteMenu'])->name('deleteMenu');
+Route::post('/menuPost',[HomeController::class,'menuPost'])->name('menuPost');
+
+
+
+Route::post('/orderPost',[HomeController::class,'orderPost'])->name('orderPost');
+Route::get('/addOrder',[HomeController::class,'addOrder'])->name('addOrder');
+Route::post('/addOrderPost',[HomeController::class,'addOrderPost'])->name('addOrderPost');
+Route::get('/orders',[HomeController::class, 'orders'])->name('orders');
+Route::get('/newOrders',[HomeController::class,'newOrders'])->name('newOrders');
+Route::get('/completedOrders',[HomeController::class,'completedOrders'])->name('completedOrders');
+Route::get('/deleteOrder/{id}',[HomeController::class,'deleteOrder'])->name('deleteOrders');
+
+
+
+Route::post('/CustomerMenuPost',[HomeController::class,'CustomerMenuPost'])->name('CMP');
+Route::get('/customerMenu',[HomeController::class,'customerMenu'])->name('customerMenu');
+
+Route::get('/addCustomerMenu',[HomeController::class,'addCustomerMenu'])->name('addCustomerMenu');
+Route::post('/addCustomerMenuPost',[HomeController::class,'addCustomerMenuPost'])->name('addCustomerMenuPost');

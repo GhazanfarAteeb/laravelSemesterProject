@@ -18,6 +18,7 @@ namespace App\Models{
  * @property string $name
  * @property string $email
  * @property string $password
+ * @property string $profilePic
  * @property string $role
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  * @property-read int|null $notifications_count
@@ -29,6 +30,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|User whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereProfilePic($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRole($value)
  */
 	class User extends \Eloquent {}
@@ -39,10 +41,11 @@ namespace App\Models{
  * App\Models\customerMenu
  *
  * @property int $id
- * @property string $Item Name
+ * @property string $ItemName
  * @property int $quantity
  * @property int $OrderID
  * @property float $unitPrice
+ * @method static \Database\Factories\customerMenuFactory factory(...$parameters)
  * @method static \Illuminate\Database\Eloquent\Builder|customerMenu newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|customerMenu newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|customerMenu query()
@@ -62,11 +65,12 @@ namespace App\Models{
  * @property int $id
  * @property string $CustomerName
  * @property string $ContactNo
- * @property int $EventID
+ * @property string $EventType
+ * @property string $EventState
  * @property float $Bill
- * @property int $menuID
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property string|null $created_at
+ * @property string|null $updated_at
+ * @method static \Database\Factories\orderFactory factory(...$parameters)
  * @method static \Illuminate\Database\Eloquent\Builder|order newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|order newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|order query()
@@ -74,9 +78,9 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|order whereContactNo($value)
  * @method static \Illuminate\Database\Eloquent\Builder|order whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|order whereCustomerName($value)
- * @method static \Illuminate\Database\Eloquent\Builder|order whereEventID($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|order whereEventState($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|order whereEventType($value)
  * @method static \Illuminate\Database\Eloquent\Builder|order whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|order whereMenuID($value)
  * @method static \Illuminate\Database\Eloquent\Builder|order whereUpdatedAt($value)
  */
 	class order extends \Eloquent {}
