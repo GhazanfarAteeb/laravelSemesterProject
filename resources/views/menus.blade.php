@@ -74,7 +74,7 @@
                                                 <td>{{$menu->unitPrice * $menu->quantity}}</td>
                                                 <td class="text-center">
                                                     <button type="submit" class="btn btn-primary mr-2">
-                                                        <a href="updateMenu/{{$menu->id}}" class="text-white">
+                                                        <a href="updateCustomerMenu/{{$menu->id}}" class="text-white">
                                                             Update
                                                         </a>
                                                     </button>

@@ -79,7 +79,7 @@
                                             <td>{{$order->Bill}}</td>
                                             <td class="text-center">
                                                 <button type="submit" class="btn btn-primary mr-2">
-                                                    <a href="update/{{$order->id}}" class="text-white">
+                                                    <a href="updateOrders/{{$order->id}}" class="text-white">
                                                         Update
                                                     </a>
                                                 </button>

@@ -128,6 +128,37 @@ class HomeController extends Controller
     }
 
 
+    public function updateOrder($id) {
+        try {
+            $order=order::findOrFail($id);
+            $profilePic = Auth::user()->profilePic;
+            return view('updateOrders',[
+                'profilePic'=>$profilePic,
+                'order'=>$order
+            ]);
+        } catch(Exception $ex) {
+            return redirect('orders');
+        }
+    }
+
+    public function updateOrderPost(Request $req) {
+        $req->validate([
+            'bill' =>'required',
+            'name' => 'required',
+            'contact' =>'required',
+        ]);
+        $order=order::find($req->input('orderID'));
+        $order->CustomerName = $req->input('name');
+        $order->ContactNo = $req->input('contact');
+        $order->EventState = $req->input('EventState');
+        $order->EventType = $req->input('EventType');
+        $order->Bill = $req->input('bill');
+        $order->save();
+        return redirect('orders');
+    }
+
+
+
 
 
 
@@ -220,5 +251,30 @@ class HomeController extends Controller
         return view('addCustomerMenu',[
             'profilePic'=>$profilePic
         ]);
+    }
+
+    public function updateCustomerMenu($id) {
+        $customerMenu = customerMenu::find($id);
+        $profilePic = Auth::user()->profilePic;
+        return view('updateCustomerMenu',[
+            'profilePic' => $profilePic,
+            'menu'=>$customerMenu
+        ]);
+    }
+
+    public function updateCustomerMenuPost(Request $req) {
+        $req->validate([
+            'orderID'=>'required',
+            'itemName'=>'required',
+            'quantity'=>'required',
+            'unitPrice'=>'required'
+        ]);
+        $customerMenu = customerMenu::find($req->input('id'));
+        $customerMenu->ItemName = $req->input('itemName');
+        $customerMenu->quantity =$req->input('quantity');
+        $customerMenu->unitPrice = $req->input('unitPrice');
+        $customerMenu->orderID=$req->input('orderID');
+        $customerMenu->save();
+        return redirect('menu');
     }
 }
