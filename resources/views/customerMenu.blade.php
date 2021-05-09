@@ -89,38 +89,41 @@
                                         <h3>Menu</h3>
                                     </div>
                                 </div>
-                                <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid"
-                                    aria-describedby="example2_info">
-                                    <thead>
-                                        <tr role="row">
-                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-sort="ascending" aria-label="Order ID">Order ID</th>
-                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Customer Name">Item Name</th>
-                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Quantity">
-                                                Quantity</th>
-                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Customer Name">
-                                                Price Per Unit
-                                            </th>
-                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Engine version: activate to sort column ascending">Total</th>
+                                @if($menus!=null)
+                                    <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid"
+                                        aria-describedby="example2_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                    aria-sort="ascending" aria-label="Order ID">Order ID</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                    aria-label="Customer Name">Item Name</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Quantity">
+                                                    Quantity</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                    aria-label="Customer Name">
+                                                    Price Per Unit
+                                                </th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                    aria-label="Engine version: activate to sort column ascending">Total</th>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($menus as $menu)
-                                        <tr>
-                                            <td class="dtr-control sorting_1" tabindex="0">{{$menu->id}}</td>
-                                            <td>{{$menu->ItemName}}</td>
-                                            <td>{{$menu->quantity}}</td>
-                                            <td>{{$menu->unitPrice}}</td>
-                                            <td>{{$menu->unitPrice * $menu->quantity}}</td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-
-                                </table>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($menus as $menu)
+                                            <tr>
+                                                <td class="dtr-control sorting_1" tabindex="0">{{$menu->id}}</td>
+                                                <td>{{$menu->ItemName}}</td>
+                                                <td>{{$menu->quantity}}</td>
+                                                <td>{{$menu->unitPrice}}</td>
+                                                <td>{{$menu->unitPrice * $menu->quantity}}</td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                    @else
+                                    <p>Menu does not exists.</p>
+                                @endif
                                 @else
                                 <p>Nothing to show</p>
                                 @endif

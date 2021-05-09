@@ -40,3 +40,8 @@ Route::get('/profile',[App\Http\Controllers\HomeController::class,'profile'])->n
 Route::post('/CustomerMenuPost',[App\Http\Controllers\HomeController::class,'CustomerMenuPost'])->name('CMP');
 Route::post('/orderPost',[App\Http\Controllers\HomeController::class,'orderPost'])->name('orderPost');
 Route::post('/menuPost',[App\Http\Controllers\HomeController::class,'menuPost'])->name('menuPost');
+Route::get('/addOrder',[App\Http\Controllers\HomeController::class,'addOrder'])->name('addOrder');
+Route::post('/addOrderPost',[App\Http\Controllers\HomeController::class,'addOrderPost'])->name('addOrderPost');
+
+Route::get('/addCustomerMenu',[App\Http\Controllers\HomeController::class,'addCustomerMenu'])->name('addCustomerMenu');
+Route::post('/addOrderPost',[App\Http\Controllers\HomeController::class,'addOrderPost'])->name('addOrderPost');

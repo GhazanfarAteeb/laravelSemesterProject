@@ -23,11 +23,6 @@ class orderFactory extends Factory
     public function definition()
     {
         return [
-            // $table->string('CustomerName');
-            // $table->string('ContactNo');
-            // $table->integer('EventID');
-            // $table->double('Bill');
-            // $table->integer('menuID');
             'CustomerName' =>Str::random(10),
             'ContactNo' => Str::random(10),
             'EventType' =>'Special Eves',

@@ -38,7 +38,7 @@
                                             </button>
 
                                             <button type="submit" class="btn btn-primary">
-                                                Add Order
+                                                <a href="/addOrder" class="text-white">Add Order</a>
                                             </button>
                                         </div>
                                     </div>

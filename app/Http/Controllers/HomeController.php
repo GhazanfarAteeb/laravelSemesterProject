@@ -43,6 +43,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function addOrder() {
+        $profilePic=Auth::user()->profilePic;
+        $totalOrders=order::all()->count();
+        $totalOrders++;
+        return view('addOrder',[
+            'id'=>$totalOrders,
+            'profilePic'=>$profilePic
+        ]);
+    }
+
     public function newOrders() {
         $profilePic = Auth::user()->profilePic;
         $orders = order::where('EventState', '=' ,'Not Started')->paginate(10);
@@ -117,8 +127,10 @@ class HomeController extends Controller
             $profilePic = Auth::user()->profilePic;
             $orders = order::findOrFail($req->input('searchBar'));
 
-
             $menus = customerMenu::where('OrderID',$req->input('searchBar'))->get();
+            if ($menus->count()==0) {
+                $menus=null;
+            }
             return view('customerMenu',[
                 'order'=>$orders,
                 'menus'=>$menus,
@@ -149,5 +161,30 @@ class HomeController extends Controller
          return view('profile',['User'=>$user,
             'profilePic'=>$profilePic
          ]);
+    }
+
+    public function addOrderPost(Request $req) {
+        $req->validate([
+            'name' =>'required',
+            'contact' => 'required'
+        ]);
+        $order=new Order();
+        $order->CustomerName = $req->input('name');
+        $order->ContactNo = $req->input('contact');
+        $order->EventState = $req->input('EventState');
+        $order->EventType = $req->input('EventType');
+        $order->Bill = 0;
+        $order->save();
+        return redirect('addCustomerMenu');
+    }
+
+    public function addCustomerMenu() {
+        $profilePic=Auth::user()->profilePic;
+        $totalOrders=order::all()->count();
+        $totalOrders++;
+        return view('addCustomerMenu',[
+            'id'=>$totalOrders,
+            'profilePic'=>$profilePic
+        ]);
     }
 }
