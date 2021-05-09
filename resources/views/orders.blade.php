@@ -23,12 +23,13 @@
                         </div>
                         <div class="container">
                             <div class="col-sm-12">
-                                <form action="" method="">
+                                <form action="/orderPost" method="post">
+                                    @csrf
                                     <div class="container">
                                         <div class="row">
                                         <label class="col-sm-1 col-form-label">Search</label>
                                             <div class="col-sm-3">
-                                                <input type="search" class="form form-control">
+                                                <input type="search" name="searchBar" class="form form-control" placeholder="Search Order ID">
                                             </div>
                                             <button type="submit" class="btn btn-primary mr-4">
                                             Search
@@ -45,48 +46,49 @@
                                     aria-describedby="example2_info">
                                     <thead>
                                         <tr role="row">
-                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1"
-                                                colspan="1" aria-sort="ascending"
-                                                aria-label="Order ID">Order ID</th>
+                                            <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                aria-sort="ascending" aria-label="Order ID">Order ID</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
                                                 aria-label="Customer Name">Customer Name</th>
+                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Contact No.">
+                                                Contact No.</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Contact No.">Contact No.</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Customer Name">
-                                                    Event Type
-                                                </th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Customer Name">
-                                                        Event State
-                                                    </th>
+                                                aria-label="Customer Name">
+                                                Event Type
+                                            </th>
+                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                aria-label="Customer Name">
+                                                Event State
+                                            </th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
                                                 aria-label="Engine version: activate to sort column ascending">Bill</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                    aria-label="Engine version: activate to sort column ascending">Operations</th>
+                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
+                                                aria-label="Engine version: activate to sort column ascending">Operations</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($orders as $order)
-                                            <tr>
-                                                <td class="dtr-control sorting_1" tabindex="0">{{$order->id}}</td>
-                                                <td>{{$order->CustomerName}}</td>
-                                                <td>{{$order->ContactNo}}</td>
-                                                <td>{{$order->EventType}}</td>
-                                                <td>{{$order->EventState}}</td>
-                                                <td>{{$order->Bill}}</td>
-                                                <td class="text-center">
-                                                    <button type="submit" class="btn btn-primary mr-2">
-                                                        <a href="update/{{$order->id}}" class="text-white">
-                                                            Update
-                                                        </a>
-                                                    </button>
+                                        <tr>
+                                            <td class="dtr-control sorting_1" tabindex="0">{{$order->id}}</td>
+                                            <td>{{$order->CustomerName}}</td>
+                                            <td>{{$order->ContactNo}}</td>
+                                            <td>{{$order->EventType}}</td>
+                                            <td>{{$order->EventState}}</td>
+                                            <td>{{$order->Bill}}</td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-primary mr-2">
+                                                    <a href="update/{{$order->id}}" class="text-white">
+                                                        Update
+                                                    </a>
+                                                </button>
 
-                                                    <button type="submit" class="btn btn-danger">
-                                                        <a href="delete/{{$order->id}}" class="text-white">
-                                                            Delete
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                            </tr>
+                                                <button type="submit" class="btn btn-danger">
+                                                    <a href="delete/{{$order->id}}" class="text-white">
+                                                        Delete
+                                                    </a>
+                                                </button>
+                                            </td>
+                                        </tr>
                                         @endforeach
                                     </tbody>
 

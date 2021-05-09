@@ -43,6 +43,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function orderPost(Request $req) {
+        $order = order::where('id',$req->input('searchBar'))->paginate(10);
+        return view('orders',[
+                'orders'=>$order
+        ]);
+    }
+
     public function completedOrders() {
         $orders = order::where('EventState', '=' ,'Completed')->paginate(10);
         return view('orders',[
@@ -52,6 +59,7 @@ class HomeController extends Controller
 
     public function deleteOrder($id) {
         $order = order::find($id);
+        $customerMenu = customerMenu::where('OrderID',$id)->delete();
         if ($order) {
             $order->delete();
         }
@@ -72,7 +80,12 @@ class HomeController extends Controller
             'menus'=>$menus
         ]);
     }
-
+    public function menuPost(Request $req) {
+        $menus = customerMenu::where('OrderID',$req->input('searchBar'))->paginate(10);
+        return view('menus',[
+                'menus'=>$menus
+        ]);
+    }
     public function customerMenu()  {
         $orders=null;
         return view('customerMenu',['order'=>$orders]);

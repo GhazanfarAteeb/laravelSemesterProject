@@ -23,12 +23,13 @@
                         </div>
                         <div class="container">
                             <div class="col-sm-12">
-                                <form action="" method="">
+                                <form action="/menuPost" method="post">
+                                    @csrf
                                     <div class="container">
                                         <div class="row">
                                         <label class="col-sm-1 col-form-label">Search</label>
                                             <div class="col-sm-3">
-                                                <input type="search" class="form form-control">
+                                                <input type="search" name="searchBar" class="form form-control" placeholder="Search Order ID">
                                             </div>
                                             <button type="submit" class="btn btn-primary mr-4">
                                             Search
@@ -47,7 +48,7 @@
                                         <tr role="row">
                                             <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1"
                                                 colspan="1" aria-sort="ascending"
-                                                aria-label="Order ID">Order ID</th>
+                                                aria-label="Order ID">Item ID</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
                                                 aria-label="Customer Name">Item Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"

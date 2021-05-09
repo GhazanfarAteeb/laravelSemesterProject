@@ -29,7 +29,7 @@
                                         <div class="row">
                                            <label class="col-sm-1 col-form-label">Search</label>
                                         <div class="col-sm-3">
-                                            <input type="search" name="searchBar" class="form form-control" placeholder="Search ID">
+                                            <input type="search" name="searchBar" class="form form-control" placeholder="Search Order ID">
                                         </div>
                                             <button type="submit" class="btn btn-primary mr-4">
                                                 Search
@@ -39,6 +39,11 @@
                                     <label></label>
                                 </form>
                                 @if($order!=null)
+                                <div class="container">
+                                    <div class=row>
+                                        <h3>Order</h3>
+                                    </div>
+                                </div>
                                 <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid"
                                     aria-describedby="example2_info">
                                     <thead>
@@ -77,6 +82,11 @@
 
                                 </table>
                                 <label></label>
+                                <div class="container">
+                                    <div class=row>
+                                        <h3>Menu</h3>
+                                    </div>
+                                </div>
                                 <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" role="grid"
                                     aria-describedby="example2_info">
                                     <thead>
@@ -87,10 +97,6 @@
                                                 aria-label="Customer Name">Item Name</th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Quantity">
                                                 Quantity</th>
-                                            <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
-                                                aria-label="Customer Name">
-                                                Order ID
-                                            </th>
                                             <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1"
                                                 aria-label="Customer Name">
                                                 Price Per Unit
@@ -106,7 +112,6 @@
                                             <td class="dtr-control sorting_1" tabindex="0">{{$menu->id}}</td>
                                             <td>{{$menu->ItemName}}</td>
                                             <td>{{$menu->quantity}}</td>
-                                            <td>{{$menu->OrderID}}</td>
                                             <td>{{$menu->unitPrice}}</td>
                                             <td>{{$menu->unitPrice * $menu->quantity}}</td>
                                         </tr>

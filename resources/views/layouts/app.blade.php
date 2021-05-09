@@ -156,7 +156,7 @@
                                 <a href="/menu" class="nav-link">
                                     <i class="nav-icon fa fa-bars" aria-hidden="true"></i>
                                     <p>
-                                        Menu
+                                        All Menus
                                     </p>
                                 </a>
                             </li>
@@ -168,14 +168,16 @@
                                     </p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="/#" class="nav-link">
-                                    <i class="nav-icon fa fa-user" aria-hidden="true"></i>
-                                    <p>
-                                        Add User
-                                    </p>
-                                </a>
-                            </li>
+                            @if (Auth::user()->role=='Admin')
+                                <li class="nav-item">
+                                    <a href="/#" class="nav-link">
+                                        <i class="nav-icon fa fa-user" aria-hidden="true"></i>
+                                        <p>
+                                            User
+                                        </p>
+                                    </a>
+                                </li>
+                            @endif
                             <li class="nav-item">
                                 <div class="nav-link" aria-labelledby="navbarDropdown">
                                     <a href="{{ route('logout') }}"

@@ -37,3 +37,5 @@ Route::get('/menu',[App\Http\Controllers\HomeController::class,'menu'])->name('m
 Route::get('/deleteMenu/{id}',[App\Http\Controllers\HomeController::class,'deleteMenu'])->name('deleteMenu');
 Route::get('/customerMenu',[App\Http\Controllers\HomeController::class,'customerMenu'])->name('customerMenu');
 Route::post('/CustomerMenuPost',[App\Http\Controllers\HomeController::class,'CustomerMenuPost'])->name('CMP');
+Route::post('/orderPost',[App\Http\Controllers\HomeController::class,'orderPost'])->name('orderPost');
+Route::post('/menuPost',[App\Http\Controllers\HomeController::class,'menuPost'])->name('menuPost');
