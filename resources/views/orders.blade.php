@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('profilePic',$profilePic)
+
 @section('content')
 
 <div class="content-wrapper" style="min-height: 1302.4px;">

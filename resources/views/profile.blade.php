@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('profilePic',$profilePic)
+
 @section('content')
 <section class="content-wrapper">
     <div class="container bootstrap snippet">

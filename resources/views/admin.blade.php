@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('profilePic',$profilePic)
 @section('content')
 <div class="content-wrapper" style="min-height: 174.4px;">
 <div class="content-header">
@@ -80,7 +80,7 @@
     </div><!-- /.container-fluid -->
 </section>
 <center>
-    <section class="col-lg-12 connectedSortable ui-sortable">
+    <section class="col-lg-12">
         <div class="container">
             <div class="row">
 

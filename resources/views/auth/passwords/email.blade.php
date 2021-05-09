@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('profilePic',$profilePic)
+
 
 @section('content')
 <div class="container">
